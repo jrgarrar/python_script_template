@@ -2,22 +2,15 @@
 
 ### Overview
 
-Python scripts are handy tools for common, repetitive tasks, such as:
+Python scripts are handy tools for common, repetitive tasks. This directory contains simple examples that can be tailored to specific project needs.
 
-* Creating templated files
-* Performing routine maintenance
-* Generating reports
-
-
-### Setup
-
-1. Install [Python](https://www.python.org/downloads/).
-
-2. Copy this directory.
-
-3. Modify `script.py` to do what you need.
-
-4. Run `python script.py <your_arguments>` to execute the script from the command line.
+```
+basic_cli_script        A simple command line script.   
+data_pipeline           Ingest, modify, and output data.
+file_templater          Create repetitive, similar files by passing in parameters.
+api_accessor            Issue GET, POST, and other HTTP commands to the internet.
+simple_api              Create a barebones API.
+```
 
 
 ### Main Technical Stack
@@ -30,40 +23,8 @@ Python scripts are handy tools for common, repetitive tasks, such as:
 
 ### Helpful Tools
 
-| Tool       | Description                                                    |
-| ---------- | -------------------------------------------------------------- |
-| Pandas     | Read and write to most filetypes, including Excel.             |
-| Jinja      | Quick and easy templating tool.                                |
-| Matplotlib | Generate image files from data.                                |
-| Black      | An automatic Python formatter to ensure consistent code style. |
-| Venv       | Pin your Python version                                        |
-
-
-```
-# Example Installation
-$ pip install pandas
-```
-
-```
-# Example Usage in File
-import pandas
-
-pandas.read_csv('some_filename')
-```
-
-### Advanced Usage
-
-***black***
-
-Use `black *.py` to auto-format all Python files in the directory.
-
-***venv***
-
-Use `sh env_setup.sh` to create a version of Python local to this directory. Python packages will be installed here, rather than across your entire system.
-
-***requirements.txt***
-
-Use `pip freeze > requirements.txt` to create a file that lists all dependencies, as well as their versions.
-
-Use `pip -r requirements.txt` to install those dependencies.
-
+| Tool     | Description                                                                                                    |
+| -------- | -------------------------------------------------------------------------------------------------------------- |
+| Black    | An automatic code formatter. Ensures consistent style.                                                         |
+| Venv     | A virtual environment manager. Can be used to reproduce an exact Python environment (language + dependencies). |
+| unittest | One of several testing frameworks. Can be used to create a regression test suite.                              |

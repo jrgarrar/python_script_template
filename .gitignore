@@ -1,2 +1,3 @@
-pyenv/
-requirements.txt
+output/*.sql
+output/*.data
+__pycache__

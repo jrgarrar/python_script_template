@@ -1,0 +1,1 @@
+export FLASK_APP=simple_api && flask run

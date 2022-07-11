@@ -16,8 +16,8 @@ import pandas as pd
 # Globals
 ### A variable that points to this file's parent directory
 PARENT_DIR = pathlib.Path(__file__).parent.absolute()
-INPUT_DIR = os.path.join(PARENT_DIR, 'input')
-OUTPUT_DIR = os.path.join(PARENT_DIR, 'output')
+INPUT_DIR = os.path.join(PARENT_DIR, "input")
+OUTPUT_DIR = os.path.join(PARENT_DIR, "output")
 
 # Argument Parsing
 def parse_args():
@@ -32,6 +32,7 @@ def parse_args():
     args = parser.parse_args()
     return args
 
+
 # Main Function
 def main(args):
     """
@@ -41,10 +42,10 @@ def main(args):
     input_file_path = os.path.join(INPUT_DIR, args.target_filename)
     input_data = pd.read_csv(input_file_path, header=None)
     print(f"Input file found at {input_file_path}")
-    
+
     # Transform the data (add a new column)
     output_data = input_data.copy(deep=True)
-    output_data['new_col'] = 1
+    output_data["new_col"] = 1
 
     # Output to file
     output_file_path = os.path.join(OUTPUT_DIR, args.target_filename)
