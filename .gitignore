@@ -1,3 +1,4 @@
 output/*.sql
 output/*.data
+output/*.png
 __pycache__
