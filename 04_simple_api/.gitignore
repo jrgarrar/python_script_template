@@ -1,5 +1,4 @@
 output/*.sql
 output/*.data
 output/*.png
-output/*.xlsx
 __pycache__
