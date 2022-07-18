@@ -18,5 +18,3 @@ A simple example of how to generate files from a template.
 ### Author's Notes
 
 `jinja2` is the defacto templating library for Python.
-
-I've used variations of this script to create repetitive SQL scripts, standardized project plans, and auto-generated documentation. If you find yourself typing out the same boilerplate across multiple files, this might be a solution.

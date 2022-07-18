@@ -10,7 +10,11 @@ Python scripts are handy tools for common, repetitive tasks. This directory cont
 02_file_templater          Create repetitive, similar files by passing in parameters.
 03_api_accessor            Issue GET, POST, and other HTTP commands to the internet.
 04_simple_api              Create a barebones API.
-05_graph_generator         Create a graph, for use as a dashboard or visual, from input data.
+05_graph_generator         Create a graph, for use as a dashboard or visual.
+06_excel_cleaner           Manipulate Excel data from the command line.
+07_sql_wrapper             (TBD) Wrap SQL commands in a script.
+08_install_tool            (TBD) Install software dependencies using a script.
+09_test_suite              (TBD) Execute a series of tests.
 ```
 
 
@@ -24,8 +28,9 @@ Python scripts are handy tools for common, repetitive tasks. This directory cont
 
 ### Helpful Tools
 
-| Tool     | Description                                                                                                    |
-| -------- | -------------------------------------------------------------------------------------------------------------- |
-| black    | An automatic code formatter. Ensures consistent style.                                                         |
-| venv     | A virtual environment manager. Can be used to reproduce an exact Python environment (language + dependencies). |
-| unittest | One of several testing frameworks. Can be used to create a regression test suite.                              |
+| Tool       | Description                                                                                                    |
+| ---------- | -------------------------------------------------------------------------------------------------------------- |
+| black      | An automatic code formatter. Ensures consistent style.                                                         |
+| unittest   | One of several testing frameworks. Can be used to create a regression test suite.                              |
+| virtualenv | A virtual environment manager. Can be used to reproduce an exact Python environment (language + dependencies). |
+| poetry     | An extension of virtualenv and pip that simplifies version management.                                         |
